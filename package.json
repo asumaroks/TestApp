@@ -1,7 +1,7 @@
 {
   "name": "electron-publish-example",
   "productName": "electron-publish-example",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -38,7 +38,12 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+    "options": {
+      "maintainer": 'Alexey Sumarok',
+      "homepage": 'https://sumarok.dev'
+    }
+		  }
         },
         {
           "name": "@electron-forge/maker-rpm",
